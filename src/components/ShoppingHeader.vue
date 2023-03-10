@@ -8,7 +8,7 @@
             </div>
             <ul class="nav-routes">
                 <RouterLink to='/'>Home 🏡 </RouterLink>
-                <RouterLink to='/about'>Recipes 🥣 </RouterLink>
+                <RouterLink to='/recipes'>Recipes 🥣 </RouterLink>
             </ul>
             
         </nav>

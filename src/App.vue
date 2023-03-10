@@ -4,8 +4,10 @@ import ShoppingHeader from './components/ShoppingHeader.vue';
 </script>
 
 <template>
-   <ShoppingHeader />
-   <RouterView />
+  <div>
+     <ShoppingHeader />
+     <RouterView />
+  </div>
 </template>
 
 <style scoped>
