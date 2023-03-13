@@ -1,5 +1,5 @@
 <script  setup>
-import { reactive, defineEmits } from "vue"; //emit step 2
+import { reactive } from "vue"; //emit step 2
 
 const emit = defineEmits(["create-tobuy"]); // emit step 1
 
@@ -60,6 +60,10 @@ input {
     width:100%;
     border:none;
     padding: 8px 6px;
+}
+
+input:focus {
+    outline:none;
 }
 
 button {
