@@ -1,3 +1,5 @@
+//EMITS- WITH BBuyView.vue
+
 <script  setup>
 import { reactive } from "vue"; //emit step 2
 
