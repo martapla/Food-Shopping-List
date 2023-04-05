@@ -9,19 +9,15 @@
             <ul class="nav-routes">
                 <RouterLink to='/'>Home 🏡 </RouterLink>
                 <RouterLink to='/recipes'>Recipes 🥣 </RouterLink>
-            </ul>
-            
+            </ul>        
         </nav>
     </header>
 </template>
 
 
 <style scoped>
-/* *{
-    border:1px solid red;
-} */
+
 .container {
-    /* background-color: rgb(245, 165, 205); */
     background-color: rgb(244, 213, 99);
     display:flex;
     width: 100%;
