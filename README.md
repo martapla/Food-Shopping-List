@@ -1,13 +1,15 @@
 ## Shopping List Project 🗒
 
-In this project I am practising with Vue.js framework.
+In this project I'm practicing with Vue.js.
 
-Using Emits, Slots and Props.
+I'm creating components and playing with props and emits.
 
 The Css design is done by me, too 🐬
 
 
 
 
+![Screenshot 2023-04-14 at 01 08 00](https://user-images.githubusercontent.com/101716371/231902433-5005977c-7e23-41c6-bd0d-b884bb117ce6.png)
 
-![Screenshot 2023-03-10 at 12 48 18](https://user-images.githubusercontent.com/101716371/224308759-6927850d-6174-47e9-af0a-aa5bbe9d9a3c.png)
+
+
