@@ -1,36 +1,39 @@
 
-// WITHOUT EMITS
-<template>
-  <main>
-    <div>
-      <h1>List 📝 </h1>
-      <form @submit.prevent="addTask">
-        <div class="input-wrap">
-        <input type="text" v-model="newTask" placeholder="Write here">
-        <button type="submit">Add</button>
-      </div>
-      </form>
+<script setup>
+import BuyCreator from '../components/BuyCreator.vue';
+import { ref } from "vue";
+import { uid } from 'uid';
+import TobuyItem from '../components/TobuyItem.vue';
 
-      <ul>
-        <li class="points" v-for="(task, index) in tasks" :key="index">
-          {{ task }}
-        </li>
-      </ul>
-    </div>
-  </main>
-  </template>
-  
-  <script setup>
-    import { ref } from 'vue'
-  
-    const tasks = ref([])
-    const newTask = ref('')
-  
-    const addTask = () => {
-      tasks.value.push(newTask.value)
-      newTask.value = ''
-    }
-  </script>
+
+const tobuyList = ref([]);
+
+const createList = (tobuy) => {
+    console.log(tobuyList.value);
+    tobuyList.value.push({
+        id: uid(),
+        tobuy,
+        isCompleted: null,
+        isEditing: null,
+    });
+};
+</script>
+
+<template>
+    <main>
+        <h1>List 📝 </h1>
+        <BuyCreator @create-tobuy = "createList"/> 
+        
+        <div class="ineed">
+           
+            <h2>I Need :</h2>
+            <ul>
+                
+              <TobuyItem v-for= "food in tobuyList" :key="food" :buy="food"/>
+            </ul>
+        </div>
+    </main>
+</template>
 
 <style scoped>
 main {
@@ -76,11 +79,19 @@ button {
 
 .errMsg {
     margin-left: 150px;
+   
 }
 .points{
    margin-left:150px;
 }
+h2{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    color:  rgb(244, 201, 46);
+    font-weight: 400;
+    text-underline-offset: 10px;
+    text-decoration: underline rgb(236, 136, 197);
+}
 </style>
-  
-  
   

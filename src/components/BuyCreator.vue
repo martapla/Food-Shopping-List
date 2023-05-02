@@ -1,4 +1,3 @@
-//EMITS- WITH BBuyView.vue
 
 <script  setup>
 import { reactive } from "vue"; //emit step 2
@@ -20,8 +19,10 @@ const createBuy = () => {           //emit step 3
         return;
     } 
     tobuyState.invalid = true;            
-    tobuyState.errMsg = "...food missing... ☝ "
-    
+    tobuyState.errMsg = "... add food ... ☝ "
+    setTimeout(() => {
+        tobuyState.invalid = null;
+    }, 1000);
     
 };
 
@@ -77,6 +78,7 @@ button {
 
 .errMsg {
     margin-left: 150px;
+    color:crimson;
 }
 </style>
 

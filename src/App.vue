@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router';
 import ShoppingHeader from './components/ShoppingHeader.vue';
+
 </script>
 
 <template>
