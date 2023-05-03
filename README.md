@@ -9,7 +9,8 @@ The Css design is done by me, too 🐬
 
 
 
-![Screenshot 2023-04-14 at 01 08 00](https://user-images.githubusercontent.com/101716371/231902433-5005977c-7e23-41c6-bd0d-b884bb117ce6.png)
+
+![Screenshot 2023-05-03 at 19 13 50](https://user-images.githubusercontent.com/101716371/235991256-6b8d9700-2aef-468f-98ab-77ef4b0d00fd.png)
 
 
 
