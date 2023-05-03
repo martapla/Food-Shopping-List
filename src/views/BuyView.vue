@@ -42,10 +42,13 @@ main {
     max-width: 500px;
     width:100%;
     margin:60px auto;
+    border:2px solid #f7b088;
+    border-radius:6px;
+    background-color: rgb(163, 242, 216);
+    height:80vh;
 }
 
-h1 {
-    /* margin-top: 100px auto; */
+h1 { 
     text-align: center;
     color:rgb(143, 65, 182);
     font-weight: 400;

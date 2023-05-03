@@ -72,8 +72,11 @@ input:focus {
 button {
     border:none;
     width:80px;
-    color:rgb(241, 55, 170);
-    background: rgb(146, 236, 176);
+    color:rgb(250, 248, 250);
+    background: -webkit-linear-gradient(left, rgba(232,232,127,1) 0%,rgba(237,118,237,1) 82%,rgba(247,49,247,1) 100%);
+}
+button:hover {
+    color:#a3f2d8;
 }
 
 .errMsg {

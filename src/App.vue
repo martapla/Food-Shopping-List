@@ -5,10 +5,12 @@ import ShoppingHeader from './components/ShoppingHeader.vue';
 </script>
 
 <template>
+  <body>
   <div>
      <ShoppingHeader />
      <RouterView />
   </div>
+</body>
 </template>
 
 <style scoped>
@@ -20,10 +22,10 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
-
 .container {
   max-width:1100px;
   margin: 0 auto;
 }
+
 
 </style>
