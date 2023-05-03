@@ -93,8 +93,6 @@ h2{
     margin-top: 30px;
     color:  rgb(244, 201, 46);
     font-weight: 400;
-    text-underline-offset: 10px;
-    text-decoration: underline rgb(236, 136, 197);
 }
 </style>
   
