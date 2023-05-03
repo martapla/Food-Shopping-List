@@ -1,5 +1,8 @@
 ## Shopping List Project 🗒
 
+### Vercel:
+https://food-shopping-list-martapla.vercel.app/
+
 In this project I'm practicing with Vue.js.
 
 I'm creating components and playing with props and emits.
