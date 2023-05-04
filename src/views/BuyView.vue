@@ -17,6 +17,14 @@ const createList = (tobuy) => {
         isEditing: null,
     });
 };
+
+const ralla = (id) => {
+  const item = tobuyList.value.find((item) => item.id === id);
+  if (item) {
+    item.isCompleted = !item.isCompleted;
+  }
+};
+
 </script>
 
 <template>
@@ -29,7 +37,10 @@ const createList = (tobuy) => {
             <h2>I Need :</h2>
             <ul>
                 
-              <TobuyItem v-for= "food in tobuyList" :key="food" :buy="food"/>
+              <TobuyItem v-for= "food in tobuyList" :key="food.id" 
+              :buy="food" 
+              @delete-buy="deleteBuy" 
+              @linia="ralla"/>
             </ul>
         </div>
     </main>
@@ -94,5 +105,6 @@ h2{
     color:  rgb(244, 201, 46);
     font-weight: 400;
 }
+
 </style>
   

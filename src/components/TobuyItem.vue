@@ -5,20 +5,23 @@ const props = defineProps({
         type: Object,
         required: true,
     },
+   
 });
+
+const emit = defineEmits(["linia","delete-buy"]);
 
 </script>
 
 <template>
     <li>
     <div>
-       <h3 class ="products"> {{ props.buy.tobuy }}</h3>
-       <!-- <input type="checkbox" :checked="buy.isCompleted"/> -->
+
+       <h3 class ="products" :class="{'completed': props.buy.isCompleted}"> {{ props.buy.tobuy }}</h3>
     </div>
     <div class="actions">
-        <Icon icon="material-symbols:heart-check" class="icon" color="red" />
+        <Icon icon="material-symbols:heart-check" class="icon" color="red" @click="$emit('linia',props.buy.id)"/>
         <Icon icon="mdi:lead-pencil" class="icon" color="green" />
-        <Icon icon="solar:trash-bin-trash-linear" class="icon" color="orange" />
+        <Icon icon="solar:trash-bin-trash-linear" class="icon" color="orange" @click="$emit('delete-buy')"/>
 
     </div>
 
@@ -63,9 +66,16 @@ li:hover .actions {
     display:flex;
     justify-items: right;
 }
-.icon{
+.icon {
     cursor:pointer;
     margin-right:20px;
+}
+.icon:hover{
+    color:cornflowerblue;
+}
+
+.completed {
+    text-decoration: line-through 2px;
 }
   
 </style>

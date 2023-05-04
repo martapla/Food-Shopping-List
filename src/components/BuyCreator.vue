@@ -19,7 +19,7 @@ const createBuy = () => {           //emit step 3
         return;
     } 
     tobuyState.invalid = true;            
-    tobuyState.errMsg = "... add food ... ☝ "
+    tobuyState.errMsg = "... Add Food ... ☝ "
     setTimeout(() => {
         tobuyState.invalid = null;
     }, 1000);
