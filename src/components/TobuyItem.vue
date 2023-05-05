@@ -8,19 +8,21 @@ const props = defineProps({
    
 });
 
-const emit = defineEmits(["linia","delete-buy"]);
+const emit = defineEmits(["line-buy","delete-buy", "edit-buy"]);
 
 </script>
 
 <template>
     <li>
     <div>
-
        <h3 class ="products" :class="{'completed': props.buy.isCompleted}"> {{ props.buy.tobuy }}</h3>
     </div>
+
     <div class="actions">
-        <Icon icon="material-symbols:heart-check" class="icon" color="red" @click="$emit('linia',props.buy.id)"/>
-        <Icon icon="mdi:lead-pencil" class="icon" color="green" />
+        <Icon icon="material-symbols:heart-check" class="icon" color="red" @click="$emit('line-buy',props.buy.id)"/>
+
+        <Icon icon="mdi:lead-pencil" class="icon" color="green" @click="$emit('edit-buy')"/>
+
         <Icon icon="solar:trash-bin-trash-linear" class="icon" color="orange" @click="$emit('delete-buy', props.buy.id)"/>
 
     </div>
