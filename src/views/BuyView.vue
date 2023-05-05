@@ -18,12 +18,21 @@ const createList = (tobuy) => {
     });
 };
 
+// COMPLETE-LINE TASK 
 const ralla = (id) => {
   const item = tobuyList.value.find((item) => item.id === id);
   if (item) {
     item.isCompleted = !item.isCompleted;
   }
 };
+
+//DELETE TASK
+const deleteBuy = (del) => {
+    tobuyList.value = tobuyList.value.filter((buy) => buy.id !== del)
+}
+
+// DELETE Notes: 'del'representa el valor del identificador del elemento a eliminar de la lista.
+//filter() crea un nuevo array, solo con el valor 'id'
 
 </script>
 

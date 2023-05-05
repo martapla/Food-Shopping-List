@@ -21,7 +21,7 @@ const emit = defineEmits(["linia","delete-buy"]);
     <div class="actions">
         <Icon icon="material-symbols:heart-check" class="icon" color="red" @click="$emit('linia',props.buy.id)"/>
         <Icon icon="mdi:lead-pencil" class="icon" color="green" />
-        <Icon icon="solar:trash-bin-trash-linear" class="icon" color="orange" @click="$emit('delete-buy')"/>
+        <Icon icon="solar:trash-bin-trash-linear" class="icon" color="orange" @click="$emit('delete-buy', props.buy.id)"/>
 
     </div>
 
