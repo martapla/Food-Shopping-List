@@ -26,6 +26,25 @@ const lineBuy = (id) => {
   }
 };
 
+//EDIT BUY
+const editBuy = (id) => {
+    const item = tobuyList.value.find((item) => item.id === id);
+    if (item) {
+        item.isEditing = !item.isEditing;
+    }
+}
+
+//UPDATE BUY
+
+const updateBuy = (id, buyVal) => {
+    console.log("updateBuy id:", id, "and buyVal:", buyVal);
+    const item = tobuyList.value.find((item) => item.id === id);
+    if (item) {
+        item.tobuy = buyVal;
+    }
+}
+
+
 //DELETE BUY
 const deleteBuy = (del) => {
     tobuyList.value = tobuyList.value.filter((buy) => buy.id !== del)
@@ -33,16 +52,6 @@ const deleteBuy = (del) => {
 
 // DELETE Notes: 'del'representa el valor del identificador del elemento a eliminar de la lista.
 //filter() crea un nuevo array, solo con el valor 'id'
-
-
-//EDIT BUY
-const editBuy = (id) => {
-    const thing = tobuyList.value = tobuyList.value.find((item) => item.id === id);
-    if(item){
-       
-    }
-}
-
 
 </script>
 
@@ -60,7 +69,9 @@ const editBuy = (id) => {
               :buy="food" 
               @delete-buy="deleteBuy" 
               @line-buy="lineBuy"
-              @edit-buy="editBuy"/>
+              @edit-buy="editBuy"
+              @update-buy="updateBuy"/>
+
             </ul>
         </div>
     </main>

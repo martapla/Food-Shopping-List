@@ -8,20 +8,24 @@ const props = defineProps({
    
 });
 
-const emit = defineEmits(["line-buy","delete-buy", "edit-buy"]);
+const emit = defineEmits(["line-buy","delete-buy", "edit-buy","update-buy"]);
 
 </script>
 
 <template>
     <li>
     <div>
-       <h3 class ="products" :class="{'completed': props.buy.isCompleted}"> {{ props.buy.tobuy }}</h3>
+       <input v-if ="buy.isEditing" type="text" :value="props.buy.tobuy" @input="$emit ('update-buy', props.buy.id, $event.target.value)"
+/>
+
+       <h3 v-else :class="{'completed': props.buy.isCompleted}" class ="products"> {{ props.buy.tobuy }}</h3>
+       
     </div>
 
     <div class="actions">
         <Icon icon="material-symbols:heart-check" class="icon" color="red" @click="$emit('line-buy',props.buy.id)"/>
 
-        <Icon icon="mdi:lead-pencil" class="icon" color="green" @click="$emit('edit-buy')"/>
+        <Icon icon="mdi:lead-pencil" class="icon" color="green" @click="$emit('edit-buy',props.buy.id)" />
 
         <Icon icon="solar:trash-bin-trash-linear" class="icon" color="orange" @click="$emit('delete-buy', props.buy.id)"/>
 
