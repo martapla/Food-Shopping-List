@@ -18,7 +18,7 @@ const emit = defineEmits(["line-buy","delete-buy", "edit-buy","update-buy"]);
        <input v-if ="buy.isEditing" type="text" :value="props.buy.tobuy" @input="$emit ('update-buy', props.buy.id, $event.target.value)"
 />
 
-       <h3 v-else :class="{'completed': props.buy.isCompleted}" class ="products"> {{ props.buy.tobuy }}</h3>
+       <h3 v-else :class="{'completed': props.buy.isCompleted}" class ="products">- {{ props.buy.tobuy }}</h3>
        
     </div>
 
@@ -51,10 +51,10 @@ li {
   justify-content: space-between;
   gap: 10px;
   padding: 16px 10px;
-  background-color: #f2de8b;
+  /* background-color: #f2de8b; */
   border-radius: 6px;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  /* box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), */
+    /* 0 8px 10px -6px rgb(0 0 0 / 0.1); */
   margin-bottom: 20px;
   height: 25px;
   width: 85%;

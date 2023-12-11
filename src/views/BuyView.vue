@@ -81,12 +81,13 @@ const deleteBuy = (del) => {
 main {
     display:flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 70vw;
     width:100%;
     margin:60px auto;
-    border:2px solid #f7b088;
+    border:6px solid #f7b088;
     border-radius:6px;
-    background-color: rgb(163, 242, 216);
+    /* background-color: rgb(192, 242, 225); */
+    background-color: #f9cfb7;
     height:80vh;
 }
 
@@ -133,7 +134,7 @@ h2{
     text-align: left;
     margin-left: 50px;
     margin-top: 30px;
-    color:  rgb(244, 201, 46);
+    color: rgba(237,118,237,1);
     font-weight: 400;
 }
 

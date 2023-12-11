@@ -1,8 +1,8 @@
 
 <script  setup>
-import { reactive } from "vue"; //emit step 2
+import { reactive } from "vue"; 
 
-const emit = defineEmits(["create-tobuy"]); // emit step 1
+const emit = defineEmits(["create-tobuy"]); 
 
 const tobuyState = reactive({
     tobuy: "",
@@ -11,9 +11,9 @@ const tobuyState = reactive({
 
 });
 
-const createBuy = () => {           //emit step 3
+const createBuy = () => {          
     tobuyState.invalid = null;
-    if (tobuyState.tobuy !== "") {  // if is not equal to an empty string
+    if (tobuyState.tobuy !== "") {  // if is not equal to an empty string, then we listen the next emit line:
         emit("create-tobuy", tobuyState.tobuy);
         tobuyState.tobuy = ""; //reset to an empty string
         return;
@@ -31,7 +31,7 @@ const createBuy = () => {           //emit step 3
 // Done with REF, when is only one element
 // const tobuy = ref("");
 
-// const createBuy = () => {  //emit step 3
+// const createBuy = () => { 
 //     emit("create-tobuy", tobuy.value); //We put .value with Ref, not need .value with reactive
 //};
 
@@ -51,18 +51,19 @@ const createBuy = () => {           //emit step 3
 <style scoped>
 .input-wrap {
     display: flex;
-    border:2px solid rgb(238, 134, 223);
-    border-radius: 3px;
+    border-radius: 20px;
     transition:250ms ease;
     width:80%;
-    height: 30px;
+    height: 40px;
     margin:0 auto;
 }
 
 input {
-    width:100%;
+    width:80%;
     border:none;
-    padding: 8px 6px;
+    padding: 8px 30px;
+    border-radius: 18px;
+    margin-right:20px;
 }
 
 input:focus {
@@ -70,13 +71,20 @@ input:focus {
 }
 
 button {
-    border:none;
-    width:80px;
-    color:rgb(250, 248, 250);
-    background: -webkit-linear-gradient(left, rgba(232,232,127,1) 0%,rgba(237,118,237,1) 82%,rgba(247,49,247,1) 100%);
+    border:1px solid white;
+    color: rgba(237,118,237,1);
+    background-color: rgb(244, 213, 99);
+    width: 60px;
+    height: 40px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
 }
 button:hover {
-    color:#a3f2d8;
+    color:white;
 }
 
 .errMsg {

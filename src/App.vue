@@ -5,10 +5,12 @@ import ShoppingHeader from './components/ShoppingHeader.vue';
 </script>
 
 <template>
-  <body>
+  <body class="background-container">
   <div>
+   
      <ShoppingHeader />
      <RouterView />
+    
   </div>
 </body>
 </template>
@@ -26,6 +28,13 @@ box-sizing:border-box;
   max-width:1100px;
   margin: 0 auto;
 }
-
+.background-container {
+  background-image: url('@/assets/image.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  overflow: hidden; /* Ensure the background doesn't overflow */
+}
 
 </style>
