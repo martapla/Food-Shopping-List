@@ -26,31 +26,37 @@ const createBuy = () => {
     
 };
 
-//https://www.youtube.com/watch?v=KTFH4P8unUQ min:51
+
 
 // Done with REF, when is only one element
 // const tobuy = ref("");
 
 // const createBuy = () => { 
-//     emit("create-tobuy", tobuy.value); //We put .value with Ref, not need .value with reactive
+//     emit("create-tobuy", tobuy.value); //We put .value with Ref, not need .value with Reactive
 //};
+//https://www.youtube.com/watch?v=KTFH4P8unUQ min:51
 
 </script>
 
 <template>
     <section>
-    <div class="input-wrap">
-        <input type="text" v-model="tobuyState.tobuy"/>
-        <button @click="createBuy()">Add</button>
-    
-    </div>
-    <p v-show = "tobuyState.invalid" class="errMsg">{{ tobuyState.errMsg }}</p>
+        <div class="input-wrap">
+            <input type="text" v-model="tobuyState.tobuy"/>
+            <button @click="createBuy()">Add</button>
+        
+        </div>
+        <p v-show = "tobuyState.invalid" class="errMsg">{{ tobuyState.errMsg }}</p>
     </section>
 </template>
 
 <style scoped>
+/* *{
+    border: 1px solid green;
+} */
 .input-wrap {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
     transition:250ms ease;
     width:80%;
@@ -60,10 +66,9 @@ const createBuy = () => {
 
 input {
     width:80%;
-    border:none;
+    border:1px solid rgba(237,118,237,1);
     padding: 8px 30px;
     border-radius: 18px;
-    margin-right:20px;
 }
 
 input:focus {
@@ -71,9 +76,10 @@ input:focus {
 }
 
 button {
-    border:1px solid white;
+    border: 1px solid rgb(195, 241, 127);;
     color: rgba(237,118,237,1);
     background-color: rgb(244, 213, 99);
+    box-shadow: 2px 2px rgb(142, 212, 37);
     width: 60px;
     height: 40px;
     border-radius: 20%;
@@ -81,6 +87,8 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-top:15px;
+    padding:12px;
    
 }
 button:hover {
@@ -90,6 +98,38 @@ button:hover {
 .errMsg {
     margin-left: 150px;
     color:crimson;
+}
+
+/* --------  Tablet and Desktop --------*/
+/* ------------------------------------ */
+@media screen and (min-width: 768px){ 
+    .input-wrap {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    transition:250ms ease;
+    width:80%;
+    height: 40px;
+    margin:0 auto;
+}
+
+button {
+    color: rgba(237,118,237,1);
+    background-color: rgb(244, 213, 99);
+    width: 60px;
+    height: 40px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top:0px;
+    padding:0px;
+}
+input {
+   margin-right:20px;
+}
+
 }
 </style>
 

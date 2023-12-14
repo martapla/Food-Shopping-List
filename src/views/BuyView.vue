@@ -60,9 +60,7 @@ const deleteBuy = (del) => {
         <h1>List 📝 </h1>
         <BuyCreator @create-tobuy = "createList"/> 
         
-        <div class="ineed">
-           
-            <h2>I Need :</h2>
+        <div>
             <ul>
                 
               <TobuyItem v-for= "food in tobuyList" :key="food.id" 
@@ -78,23 +76,26 @@ const deleteBuy = (del) => {
 </template>
 
 <style scoped>
+/* *{
+    border: 1px solid red;
+} */
 main {
     display:flex;
     flex-direction: column;
     max-width: 70vw;
     width:100%;
-    margin:60px auto;
+    margin:40px auto;
     border:6px solid #f7b088;
     border-radius:6px;
-    /* background-color: rgb(192, 242, 225); */
     background-color: #f9cfb7;
-    height:80vh;
+    /* height:80vh; */
 }
 
 h1 { 
     text-align: center;
     color:rgb(143, 65, 182);
     font-weight: 400;
+    font-size: 20px;
 }
 .input-wrap {
     display: flex;
@@ -130,12 +131,24 @@ button {
 .points{
    margin-left:150px;
 }
-h2{
+/* h2{
     text-align: left;
     margin-left: 50px;
     margin-top: 30px;
     color: rgba(237,118,237,1);
     font-weight: 400;
+} */
+
+ul {
+    padding: 0px;
+    /* margin: 60px 0; */
+}
+
+
+/* --------  Tablet and Desktop --------*/
+/* ------------------------------------ */
+@media screen and (min-width: 768px){ 
+
 }
 
 </style>

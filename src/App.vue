@@ -25,7 +25,7 @@ padding:0;
 box-sizing:border-box;
 }
 .container {
-  max-width:1100px;
+  /* max-width:1100px; */
   margin: 0 auto;
 }
 .background-container {
@@ -33,8 +33,8 @@ box-sizing:border-box;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  overflow: hidden; /* Ensure the background doesn't overflow */
+  height: 100vh; 
+  overflow: hidden; 
 }
 
 </style>
