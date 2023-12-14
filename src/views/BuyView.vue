@@ -76,9 +76,6 @@ const deleteBuy = (del) => {
 </template>
 
 <style scoped>
-/* *{
-    border: 1px solid red;
-} */
 main {
     display:flex;
     flex-direction: column;
@@ -88,7 +85,8 @@ main {
     border:6px solid #f7b088;
     border-radius:6px;
     background-color: #f9cfb7;
-    /* height:80vh; */
+    max-height: 80vh; 
+    overflow-y: auto; 
 }
 
 h1 { 
@@ -125,29 +123,26 @@ button {
 }
 
 .errMsg {
-    margin-left: 150px;
-   
+    /* margin-left: 10px; */
 }
-.points{
-   margin-left:150px;
-}
-/* h2{
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 30px;
-    color: rgba(237,118,237,1);
-    font-weight: 400;
-} */
 
 ul {
     padding: 0px;
-    /* margin: 60px 0; */
 }
 
 
 /* --------  Tablet and Desktop --------*/
 /* ------------------------------------ */
 @media screen and (min-width: 768px){ 
+main {
+   max-height: 70vh; 
+   overflow-y: auto; 
+}
+
+.errMsg {
+    margin-left: 150px;
+}
+
 
 }
 

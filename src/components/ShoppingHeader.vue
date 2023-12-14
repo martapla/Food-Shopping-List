@@ -10,7 +10,7 @@ import { RouterLink } from "vue-router";
             </div>
             <ul class="nav-routes">
                 <RouterLink to='/'>Home 🏡 </RouterLink>
-                <RouterLink to='/recipes'>Recipes 🥣 </RouterLink>
+                <RouterLink to='/recipes'>Your Recipes 🥣 </RouterLink>
             </ul>        
         </nav>
     </header>
@@ -18,10 +18,6 @@ import { RouterLink } from "vue-router";
 
 
 <style scoped>
-
-/* * {
-    border:1px solid red;
-} */
 .container {
     background-color: rgb(244, 213, 99);
     display:flex;
@@ -35,30 +31,33 @@ h1 {
     margin:0px;
 }
 .title {
-  text-align:center;
-  font-size: 14px;
-  width: 100vw;
-  color:rgb(241, 55, 170);
-  text-shadow: 2px 2px greenyellow;
-  margin:20px 0 10px 0;
+    text-align:center;
+    font-size: 18px;
+    width: 100vw;
+    color:rgb(241, 55, 170);
+    text-shadow: 2px 2px greenyellow;
+    margin:20px 0 24px 0;
 }
 span {
     text-shadow: none;
 }
 .nav-routes {
     display: flex;
-    justify-content:space-around;
-    width:80%;
+    justify-content:space-evenly;
+    width:60%;
     margin:0 auto;
     padding: 0px;
     margin-bottom: 10px;
+    font-size: 14px;
+    gap: 40px;
 }
 .nav-routes a {
     text-decoration: none;
     color:white;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
 }
+
 
 @media screen and (min-width: 768px){ 
     .container {

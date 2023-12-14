@@ -50,8 +50,7 @@ const emit = defineEmits(["line-buy","delete-buy", "edit-buy","update-buy"]);
     color:rgb(237, 26, 216);
 }
 .list-wrap {
-    margin-top: 50px;
-    /* border: 1px solid violet; */
+    margin-top: 20px auto;
 }
 
 li {
@@ -60,11 +59,9 @@ li {
   justify-content: space-between;
   gap: 10px;
   padding: 8px 0px;
-  /* margin-bottom: 20px; */
   height: 25px;
   width: 94%;
   border-bottom: 1px solid white;
-  /* margin-top: 50px; */
   margin: 10px auto 10px auto;
 
 }
@@ -72,7 +69,6 @@ li:hover .actions {
     opacity: 10;
     transition: 150ms ease-in-out;
 }
-
 .item-wrap {
     width: 100%;
 }

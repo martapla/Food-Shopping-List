@@ -20,18 +20,14 @@ import ShoppingHeader from './components/ShoppingHeader.vue';
 
 * {
 font-family: 'Rubik', sans-serif;
-margin:0;
-padding:0;
+margin:0px;
+padding:0px;
 box-sizing:border-box;
-}
-.container {
-  /* max-width:1100px; */
-  margin: 0 auto;
 }
 .background-container {
   background-image: url('@/assets/image.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position:inherit;
   background-repeat: no-repeat;
   height: 100vh; 
   overflow: hidden; 

@@ -50,9 +50,6 @@ const createBuy = () => {
 </template>
 
 <style scoped>
-/* *{
-    border: 1px solid green;
-} */
 .input-wrap {
     display: flex;
     flex-direction: column;
@@ -60,7 +57,6 @@ const createBuy = () => {
     border-radius: 20px;
     transition:250ms ease;
     width:80%;
-    height: 40px;
     margin:0 auto;
 }
 
@@ -96,7 +92,7 @@ button:hover {
 }
 
 .errMsg {
-    margin-left: 150px;
+    margin-left: 50px;
     color:crimson;
 }
 
@@ -128,6 +124,9 @@ button {
 }
 input {
    margin-right:20px;
+}
+.errMsg {
+    margin-left: 150px;
 }
 
 }
