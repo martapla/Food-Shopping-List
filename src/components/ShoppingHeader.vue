@@ -33,7 +33,7 @@ h1 {
 }
 .title {
     text-align:center;
-    font-size: 16px;
+    font-size: 17px;
     width: 100vw;
     color:rgb(241, 55, 170);
     text-shadow: 2px 2px greenyellow;
@@ -74,7 +74,7 @@ span {
     .title {
     text-align:start;
     margin-left: 40px;
-    padding-top: 20px;
+    padding-top: 30px;
     font-size: 24px;
     width: 90vw;
     color:rgb(241, 55, 170);
