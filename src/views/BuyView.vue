@@ -141,10 +141,6 @@ button {
     background: rgb(146, 236, 176);
 }
 
-.errMsg {
-    /* margin-left: 10px; */
-}
-
 ul {
     padding: 0px;
 }

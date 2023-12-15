@@ -5,7 +5,7 @@
         <h1>Write your recipes here: </h1>
         
         <div class="recipe-text">
-          <input type="textarea">
+          <textarea placeholder="Under Construction... But Coming Soon!"></textarea>
           <button>Save</button>
         </div>
 
@@ -45,7 +45,7 @@ main {
   margin: 20px auto 0 auto;
   align-items: flex-end;
 }
-.recipe-text input{
+.recipe-text textarea {
   height:20vh;
   width:90%;
   margin: 0 auto;
@@ -53,6 +53,15 @@ main {
   border-radius: 10px;
   border:1px solid rgb(167, 105, 198);
   outline:none;
+  box-sizing: border-box; 
+  padding: 14px;
+}
+
+textarea::placeholder {
+  color: #999;
+  font-style: italic; 
+  padding:20px;
+  text-align:start;
 }
 
 .recipe-text button {
