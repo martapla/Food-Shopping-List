@@ -8,6 +8,19 @@ import TobuyItem from '../components/TobuyItem.vue';
 
 const tobuyList = ref([]);
 
+const fetchToBuyList = () => {
+    const savedToBuyList = JSON.parse(localStorage.getItem("tobuyList"));
+    if (savedToBuyList) {
+        tobuyList.value = savedToBuyList;
+    }
+};
+
+fetchToBuyList();
+
+const setToBuyListLocalStorage = () => {
+    localStorage.setItem("tobuyList", JSON.stringify(tobuyList.value))
+};
+
 const createList = (tobuy) => {
     console.log(tobuyList.value);
     tobuyList.value.push({
@@ -16,6 +29,7 @@ const createList = (tobuy) => {
         isCompleted: null,
         isEditing: null,
     });
+    setToBuyListLocalStorage();
 };
 
 // COMPLETE-LINE BUY 
@@ -24,6 +38,7 @@ const lineBuy = (id) => {
   if (item) {
     item.isCompleted = !item.isCompleted;
   }
+  setToBuyListLocalStorage();
 };
 
 //EDIT BUY
@@ -32,7 +47,8 @@ const editBuy = (id) => {
     if (item) {
         item.isEditing = !item.isEditing;
     }
-}
+    setToBuyListLocalStorage();
+};
 
 //UPDATE BUY
 
@@ -42,13 +58,16 @@ const updateBuy = (id, buyVal) => {
     if (item) {
         item.tobuy = buyVal;
     }
-}
+    setToBuyListLocalStorage();
+};
 
 
 //DELETE BUY
 const deleteBuy = (del) => {
-    tobuyList.value = tobuyList.value.filter((buy) => buy.id !== del)
-}
+    tobuyList.value = tobuyList.value.filter((buy) => buy.id !== del);
+    setToBuyListLocalStorage();
+};
+
 
 // DELETE Notes: 'del'representa el valor del identificador del elemento a eliminar de la lista.
 //filter() crea un nuevo array, solo con el valor 'id'
