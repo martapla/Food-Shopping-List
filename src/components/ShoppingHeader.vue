@@ -33,11 +33,11 @@ h1 {
 }
 .title {
     text-align:center;
-    font-size: 17px;
+    font-size: 18px;
     width: 100vw;
     color:rgb(241, 55, 170);
     text-shadow: 2px 2px greenyellow;
-    margin:20px 0 24px 0;
+    margin:22px 0 24px 0;
 }
 span {
     text-shadow: none;
@@ -48,7 +48,7 @@ span {
     /* width:60%; */
     margin:0 auto;
     padding: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 16px;
     gap: 40px;
 }
