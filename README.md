@@ -1,19 +1,34 @@
-## Shopping List Project 🗒
 
-### Vercel:
+
+## 🌐 Live Demo
+
 https://food-shopping-list-martapla.vercel.app/
 
-In this project I'm practicing with Vue.js.
+## Framework used: Vue.js.
 
-I'm creating components and playing with props and emits.
+You can find a Shopping list where you can:
+* Add, Edit, Complete and Delete food.
 
-The Css design is done by me, too 🐬
+There is also a Recipe section where you can:
+* Write your own recipes and saved them.
+
+In case you need new recipes ideas there is a:
+*  Recipes Search section. 
+
+For this search action, I am using Edamam API.
+
+## Design and Style
+
+The design is from my own imagination and is done with Css.
+
+
+### Hope you enjoy your food shopping! 🍋 🍅 🥒
 
 
 
 
 
-![Screenshot 2023-05-03 at 19 13 50](https://user-images.githubusercontent.com/101716371/235991256-6b8d9700-2aef-468f-98ab-77ef4b0d00fd.png)
+
 
 
 
