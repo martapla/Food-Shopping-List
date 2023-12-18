@@ -36,10 +36,6 @@ const emit = defineEmits(["line-buy","delete-buy", "edit-buy","update-buy"]);
 </template>
 
 <style scoped>
-
-/* *{
-    border: 1px solid red;
-} */
 .products {
     font-weight: 400;
     color:rgb(143, 65, 182);

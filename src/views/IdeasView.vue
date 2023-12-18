@@ -145,9 +145,6 @@ input {
     font-size: 16px;
     padding:0 20px;
 }
-
 }
-
-
 </style>
 

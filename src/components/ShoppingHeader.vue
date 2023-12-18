@@ -45,7 +45,6 @@ span {
 .nav-routes {
     display: flex;
     justify-content:space-evenly;
-    /* width:60%; */
     margin:0 auto;
     padding: 0px;
     margin-bottom: 12px;
