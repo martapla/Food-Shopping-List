@@ -56,9 +56,9 @@ li {
   gap: 10px;
   padding: 8px 0px;
   height: 25px;
-  width: 94%;
+  width: 80%;
   border-bottom: 1px solid white;
-  margin: 10px auto 10px auto;
+  margin: 20px auto 10px auto;
 
 }
 li:hover .actions {
@@ -70,7 +70,10 @@ li:hover .actions {
 }
 
 .item-wrap input{
-   font-size: 10px;
+   font-size: 14px;
+   padding: 4px; 
+   border: 1px solid rgb(142, 212, 37); 
+   border-radius: 6px; 
 }
 
 .item-wrap h3 {
@@ -89,11 +92,12 @@ li:hover .actions {
 .icon {
     cursor:pointer;
     margin-right:10px;
-    border: 1px solid white;
-    padding: 2px;
+    border: 1px solid  white;
+    border-radius:6px;
+    padding: 4px;
 }
 .icon:hover{
-    color:cornflowerblue;
+    border: 1px solid rgb(142, 212, 37);
 }
 
 .completed {

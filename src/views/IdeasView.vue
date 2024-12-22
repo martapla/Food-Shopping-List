@@ -74,7 +74,7 @@ main {
 }
 
 .ideas-container button {
-  border: 1px solid rgb(195, 241, 127);;
+  border: 1px solid rgb(195, 241, 127);
   color: rgba(237,118,237,1);
   background-color: rgb(244, 213, 99);
   box-shadow: 2px 2px rgb(142, 212, 37);
